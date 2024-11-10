@@ -1,4 +1,4 @@
-import { displayPosts } from "../../api/post/posts-Structure";
+import { displayPosts } from "../../api/post/posts-structure";
 import { readPosts } from "../../api/post/read";
 import { setLogoutListener } from "../../ui/global/logout";
 import { authGuard } from "../../utilities/authGuard";
