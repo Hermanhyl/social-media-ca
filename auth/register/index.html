@@ -11,61 +11,28 @@
 
   <body class="bg-blue-950">
 
-<!-- Navigation bar -->
-<nav class="bg-gray-800 text-white p-4 flex justify-between items-center ">
-
-  <!-- Logo -->
-   <div class="rounded p-2 bg-white ">
-    <a href="/"><img src="/images/noroff-logo.png" alt="Noroff Logo" class="h-8 w-15 mr-4" /></a>
-  </div>
-  
-  <!-- Navigation links -->
-  <ul class="nav-links flex items-center">
-    <li class="mr-6">
-      <a href="/" class="text-sm hover:text-gray-300">Home</a>
-    </li>
-    <li class="mr-6">
-      <a href="/profile/" class="text-sm hover:text-gray-300">My Profile</a>
-    </li>
-    <li class="mr-6">
-      <a href="/post/create/" class="text-sm hover:text-gray-300">Create Post</a>
-    </li>
-    <li>
-      <button id="logoutBtn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Logout</button>
-    </li>
-  </ul>
-  
-  <!-- Mobile menu button -->
-  <button class="mobile-menu-button md:hidden" aria-label="Open mobile menu">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
-  
-  <!-- Mobile menu -->
-  <div class="mobile-menu hidden md:hidden">
-    <ul class="flex flex-col p-4">
-      <li class="py-2">
-        <a href="/" class="text-sm hover:text-gray-300">Home</a>
-      </li>
-      <li class="py-2">
-        <a href="/profile/" class="text-sm hover:text-gray-300">My Profile</a>
-      </li>
-      <li class="py-2">
-        <a href="/auth/login/" class="text-sm hover:text-gray-300">Login</a>
-      </li>
-      <li class="py-2">
-        <a href="/auth/register/" class="text-sm hover:text-gray-300">Register</a>
-      </li>
-      <li class="py-2">
-        <a href="/post/create/" class="text-sm hover:text-gray-300">Create Post</a>
-      </li>
-      <li class="py-2">
-        <button id="logoutBtn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Logout</button>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <nav class="bg-gray-800 text-white p-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="rounded p-2 bg-white xs:hidden sm:block md:block lg:block xl:block">
+        <a href="/"><img src="/images/noroff-logo.png" alt="Noroff Logo" class="h-8 w-15" /></a>
+      </div>
+      
+      <!-- Navigation links -->
+      <ul class="nav-links flex items-center flex-wrap xs:flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row">
+        <li class="mr-6 md:mr-4 lg:mr-6 xl:mr-8 xs:mb-4 sm:mb-4">
+          <a href="/" class="text-sm hover:text-gray-300">Home</a>
+        </li>
+        <li class="mr-6 md:mr-4 lg:mr-6 xl:mr-8 xs:mb-4 sm:mb-4">
+          <a href="/profile/" class="text-sm hover:text-gray-300">My Profile</a>
+        </li>
+        <li class="mr-6 md:mr-4 lg:mr-6 xl:mr-8 xs:mb-4 sm:mb-4">
+          <a href="/post/create/" class="text-sm hover:text-gray-300">Create Post</a>
+        </li>
+        <li class="xs:mt-4 sm:mt-4">
+          <button id="logoutBtn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Logout</button>
+        </li>
+      </ul>
+    </nav>
 
 <!-- Content -->
 
